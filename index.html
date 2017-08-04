@@ -7,8 +7,30 @@
 <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.1.0/dist/leaflet.css" integrity="sha512-wcw6ts8Anuw10Mzh9Ytw4pylW8+NAD4ch3lqm9lzAsTxg0GFeJgoAtxuCLREZSC5lUXdVyo/7yfsqFjQ4S+aKw==" crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js" integrity="sha512-mNqn2Wg7tSToJhvHcqfzLMU6J4mkOImSPTxVZAdo+lcPlk+GhZmYgACEe0x35K7YzW1zJ7XyJV/TT1MrdXvMcA==" crossorigin=""></script>
+<style>
+a:link {
+    color: teal;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: teal;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+</style>
 </head>
-<title>pedw170 GEOG774 Page</title>
+<title>Index - GEOG774</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -25,18 +47,17 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
       <i class="fa fa-remove"></i>
     </a>
-   <center><img class="img-circle" src="images/profile_thumb.jpg" style="width:45%;" class="w3-round"><br><br>
+	<center><img class="img-circle" src="images/profile_thumb.jpg" style="width:45%;" class="w3-round"><br><br>
     <h4><b>GEOG774</b></h4>
-	<h5><b>pedw170's Portfolio</b></h5>
+	<h5><b>pedw170's projects</b></h5>
     <p class="w3-text-grey">Template originally by W3.CSS</p>
 	</center>
   </div>
   <div class="w3-bar-block">
     <a href="https://pedw170.github.io/GEOG774/" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>INDEX</a> 
-	<a href="pages/assignment1.html" class="w3-bar-item w3-button w3-padding"><i class="glyphicon glyphicon-map-marker fa-fw w3-margin-right"></i>ASSIGNMENT 1</a> 
-    <a href="pages/assignment2.html" class="w3-bar-item w3-button w3-padding"><i class="glyphicon glyphicon-map-marker fa-fw w3-margin-right"></i>ASSIGNMENT 2</a> 
+	<a href="pages/assignment2.html" class="w3-bar-item w3-button w3-padding"><i class="glyphicon glyphicon-map-marker fa-fw w3-margin-right"></i>ASSIGNMENT 2</a> 
     <a href="pages/assignment3.html" class="w3-bar-item w3-button w3-padding"><i class="glyphicon glyphicon-map-marker fa-fw w3-margin-right"></i>ASSIGNMENT 3</a> 
-	<a href="pages/assignment4.html" class="w3-bar-item w3-button w3-padding"><i class="glyphicon glyphicon-map-marker fa-fw w3-margin-right"></i>ASSIGNMENT 4</a> 
+    <a href="pages/assignment4.html" class="w3-bar-item w3-button w3-padding"><i class="glyphicon glyphicon-map-marker fa-fw w3-margin-right"></i>ASSIGNMENT 4</a> 
 	<a href="pages/assignment5.html" class="w3-bar-item w3-button w3-padding"><i class="glyphicon glyphicon-map-marker fa-fw w3-margin-right"></i>ASSIGNMENT 5</a> 
 	<a href="pages/project.html" class="w3-bar-item w3-button w3-padding"><i class="glyphicon glyphicon-map-marker fa-fw w3-margin-right"></i>PROJECT</a> 
   </div>
@@ -61,13 +82,19 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
     <div class="w3-container">
-    <h1><b>Index</b></h1>
-    <div class="w3-section w3-bottombar w3-padding-16">
+    <h1><b>Index & Prelab Exercise</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-8">
     </div>
     </div>
   </header>
   
   <!-- Example Map Space -->
+  <div class="w3-container">
+  <p>Hello, this page serves as launchpad for my GEOG774 github repository. 
+  <br><br>Each of my submissions for the course's lab exercises can be viewed by clicking the appropriate link on the sidebar to the left.
+  Below is a small example of embedding Leaflet maps in HTML. This simple map shows the crater forming the <a href="https://en.wikipedia.org/wiki/Manicouagan_Reservoir">Manicouagan Reservoir</a> in the province of Quebec in Canada and highlights the resulting rivers that have formed since by drawing a polygon around them.
+  <br><br>Perhaps I should add a scale bar, sometime.</p>
+  </div>
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
       <div id="mapid" style="width: 500px; height: 550px;"></div>
@@ -589,7 +616,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   </div>
   
 <!-- Contact Section -->
-  <div class="w3-container w3-padding-large w3-grey">
+  <div class="w3-container w3-padding w3-grey">
     <h4 id="contact"><b>Contact Info</b></h4>
     <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
       <div class="w3-third w3-dark-grey">
@@ -609,7 +636,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   </div>
 
   <!-- Footer -->
-  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+  <div class="w3-black w3-center w3-padding-14">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
 
 <!-- End page content -->
 </div>
