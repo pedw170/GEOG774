@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.1.0/dist/leaflet.css" integrity="sha512-wcw6ts8Anuw10Mzh9Ytw4pylW8+NAD4ch3lqm9lzAsTxg0GFeJgoAtxuCLREZSC5lUXdVyo/7yfsqFjQ4S+aKw==" crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js" integrity="sha512-mNqn2Wg7tSToJhvHcqfzLMU6J4mkOImSPTxVZAdo+lcPlk+GhZmYgACEe0x35K7YzW1zJ7XyJV/TT1MrdXvMcA==" crossorigin=""></script>
 <style>
@@ -39,28 +39,28 @@ a:active {
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 </style>
-<body class="w3-light-grey w3-content" style="max-width:1600px">
+<body class="w3-light-grey w3-content" style="max-width:100%">
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
   <div class="w3-container">
-    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
-      <i class="fa fa-remove"></i>
+    <!-- <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu"> -->
+      <!-- <i class="fa fa-remove"></i> -->
     </a>
-	<center><img class="img-circle" src="images/profile_thumb.jpg" style="width:45%;" class="w3-round"><br><br>
+	<center><img src="images/globe-os.ico" style="width:45%;" class="w3-round"><br><br>
     <h4><b>GEOG774</b></h4>
-	<h5><b>pedw170's projects</b></h5>
-    <p class="w3-text-grey">Template originally by W3.CSS</p>
+		<h5><b>pedw170's projects</b></h5>
 	</center>
   </div>
   <div class="w3-bar-block">
     <a href="https://pedw170.github.io/GEOG774/" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>INDEX</a> 
-	<a href="pages/assignment2.html" class="w3-bar-item w3-button w3-padding"><i class="glyphicon glyphicon-map-marker fa-fw w3-margin-right"></i>ASSIGNMENT 2</a> 
-    <a href="pages/assignment3.html" class="w3-bar-item w3-button w3-padding"><i class="glyphicon glyphicon-map-marker fa-fw w3-margin-right"></i>ASSIGNMENT 3</a> 
-    <a href="pages/assignment4.html" class="w3-bar-item w3-button w3-padding"><i class="glyphicon glyphicon-map-marker fa-fw w3-margin-right"></i>ASSIGNMENT 4</a> 
-	<a href="pages/assignment5.html" class="w3-bar-item w3-button w3-padding"><i class="glyphicon glyphicon-map-marker fa-fw w3-margin-right"></i>ASSIGNMENT 5</a> 
-	<a href="pages/project.html" class="w3-bar-item w3-button w3-padding"><i class="glyphicon glyphicon-map-marker fa-fw w3-margin-right"></i>PROJECT</a> 
+	<a href="pages/assignment2.html" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="glyphicon glyphicon-map-marker fa-fw w3-margin-right"></i>ASSIGNMENT 2</a> 
+    <a href="pages/assignment3.html" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="glyphicon glyphicon-map-marker fa-fw w3-margin-right"></i>ASSIGNMENT 3</a> 
+    <a href="pages/assignment4.html" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="glyphicon glyphicon-map-marker fa-fw w3-margin-right"></i>ASSIGNMENT 4</a> 
+	<a href="pages/assignment5.html" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="glyphicon glyphicon-map-marker fa-fw w3-margin-right"></i>ASSIGNMENT 5</a> 
+	<a href="pages/project.html" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="glyphicon glyphicon-map-marker fa-fw w3-margin-right"></i>PROJECT</a> 
   </div>
+  <!-- Superfluous icons 
   <div class="w3-panel w3-large">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
@@ -69,10 +69,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
+  -->
 </nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<!-- <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div> -->
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:300px">
@@ -80,7 +81,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <!-- Header -->
   <header id="portfolio">
     <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
-    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <!-- <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span> -->
     <div class="w3-container">
     <h1><b>Index & Prelab Exercise</b></h1>
     <div class="w3-section w3-bottombar w3-padding-8">
@@ -90,9 +91,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   
   <!-- Example Map Space -->
   <div class="w3-container">
-  <p>Hello, this page serves as launchpad for my GEOG774 github repository. 
-  <br><br>Each of my submissions for the course's lab exercises can be viewed by clicking the appropriate link on the sidebar to the left.
-  Below is a small example of embedding Leaflet maps in HTML. This simple map shows the crater forming the <a href="https://en.wikipedia.org/wiki/Manicouagan_Reservoir">Manicouagan Reservoir</a> in the province of Quebec in Canada and highlights the resulting rivers that have formed since by drawing a polygon around them.
+  <p>Hello, this page serves as launchpad for my GEOG774 github repository.
+  <br><br>The navigation sidebar on the left-hand side contains clickable links to each of the GEOG774 assignments, and will automatically hide itself if the browser window is resized too small to show both the sidebar and the project data.
+  <br><br>Below is a small example of embedding Leaflet maps in HTML. This simple map shows the crater forming the <a href="https://en.wikipedia.org/wiki/Manicouagan_Reservoir">Manicouagan Reservoir</a> in the province of Quebec in Canada and highlights the resulting rivers that have formed since by drawing a polygon around them.
   <br><br>Perhaps I should add a scale bar, sometime.</p>
   </div>
   <div class="w3-row-padding">
@@ -106,6 +107,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
 	}).addTo(mymap);
 	var popup = L.popup();
+	
+	var polystyle = {
+		"color": "#ff005f",
+		"weight": 2,
+		"opacity": 1,
+		"fill": "yes",
+		"fillColor": "#ff5f87",
+		"fillOpacity": 0.5
+		};
 	
 	var meteorpoly = {
 	"type": "FeatureCollection",
@@ -599,44 +609,23 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
           ]
         ]
       },
+	  
       "properties": {
-        "name": "Lakes resulting from Manicouagan meteor"
+        "name": "Manicouagan Reservoir impact"
       }
     }
   ]
 }
-	L.geoJson(meteorpoly).addTo(mymap);
+	L.geoJson(meteorpoly, {style:polystyle}).addTo(mymap);
 	L.marker([51.380590, -68.680093]).addTo(mymap)
-		.bindPopup("<b>Manicouagan Crater</b>").openPopup();
+		.bindPopup("<center><b>Site of meteor impact<br>in Manicouagan Reservoir</b></center>").openPopup();
 	mymap.on('click', onMapClick);
-
 </script>
     </div>
     
   </div>
-  
-<!-- Contact Section -->
-  <div class="w3-container w3-padding w3-grey">
-    <h4 id="contact"><b>Contact Info</b></h4>
-    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
-      <div class="w3-third w3-dark-grey">
-        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
-        <p>pedw170@aucklanduni.ac.nz</p>
-      </div>
-      <div class="w3-third w3-teal">
-        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
-        <p>Auckland, NZ</p>
-      </div>
-      <div class="w3-third w3-dark-grey">
-        <p><i class="fa fa-address-card w3-xxlarge w3-text-light-grey"></i></p>
-        <p>Student 8323226</p>
-      </div>
-    </div>
-    <hr class="w3-opacity">
-  </div>
-
   <!-- Footer -->
-  <div class="w3-black w3-center w3-padding-14">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+  <div class="w3-black w3-center w3-padding-14 footer">Powered by (a modified) <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
 
 <!-- End page content -->
 </div>
